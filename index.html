@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="styles.css">
+    <title>The Flexbox</title>
+</head>
+<body>
+
+    <h1>My blog posts</h1>
+    <button id="column">Column</button>
+    <section class="blogs" id="blogs">
+        <article class="blog blog-1">
+            <div class="user-info">
+                <img src="https://freeclipartimage.com//storage/upload/sports-clip-art/sports-clip-art-2.jpeg" alt="">
+                <h3>John Doe</h3>
+            </div>
+            <div class="blog-body">
+                <h2>1.Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque qui hic illo placeat omnis nesciunt sequi corrupti, odit enim facilis dicta esse non repudiandae magni repellendus commodi illum totam sunt.</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi odit pariatur quo voluptatum ab mollitia eos expedita facere, voluptates vel eveniet accusamus maxime iure natus minima fugit sequi dolorum tenetur.</p>
+            </div>
+        </article>
+        <article class="blog blog-2">
+                <div class="user-info">
+                        <img src="https://freeclipartimage.com//storage/upload/sports-clip-art/sports-clip-art-2.jpeg" alt="">
+                        <h3>John Doe</h3>
+                    </div>
+                    <div class="blog-body">
+                        <h2>2.Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque qui hic illo placeat omnis nesciunt sequi corrupti, odit enim facilis dicta esse non repudiandae magni repellendus commodi illum totam sunt.</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi odit pariatur quo voluptatum ab mollitia eos expedita facere, voluptates vel eveniet accusamus maxime iure natus minima fugit sequi dolorum tenetur.</p>
+                    </div>
+        </article>
+        <article class="blog blog-3">
+                <div class="user-info">
+                        <img src="https://freeclipartimage.com//storage/upload/sports-clip-art/sports-clip-art-2.jpeg" alt="">
+                        <h3>John Doe</h3>
+                    </div>
+                    <div class="blog-body">
+                        <h2>3.Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque qui hic illo placeat omnis nesciunt sequi corrupti, odit enim facilis dicta esse non repudiandae magni repellendus commodi illum totam sunt.</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi odit pariatur quo voluptatum ab mollitia eos expedita facere, voluptates vel eveniet accusamus maxime iure natus minima fugit sequi dolorum tenetur.</p>
+                    </div>
+        </article>
+    </section>
+    <script>
+        let col = document.getElementById("column");
+        let blogs = document.getElementById("blogs");
+        
+        col.onclick = () => {
+            if(col.firstChild.data === "Column") {
+            blogs.className = "col";
+            col.firstChild.data = "Row";
+            } else {
+            blogs.className = "blogs";
+            col.firstChild.data = "Column";
+            }
+
+            
+        }
+
+    </script>
+</body>
+</html>
