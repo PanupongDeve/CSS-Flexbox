@@ -20,6 +20,9 @@ h3 {
 .blogs{
     display: flex;
     flex-direction: row; /* row = แนวนอน colunm = แนวตั้ง*/
+    background: #00cec9;
+    /* width: 1000px;
+    margin: 0 auto; */
 }
 
 .blog {
@@ -28,6 +31,10 @@ h3 {
     margin: .8em;
     cursor: pointer;
     display: flex;
+    flex-basis: 500px;
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    border-radius: 5px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
@@ -40,6 +47,19 @@ h3 {
 
 .blog-body {
 
+}
+
+.blog-1{
+    flex-grow: 2;
+    /* flex-shrink: 1; */
+}
+.blog-2{
+    flex-grow: 3;
+    /* flex-shrink: 3; */
+}
+.blog-3{
+    flex-grow: 1;
+    /* flex-shrink: 1; */
 }
 
 @media (max-width: 600px) {
